@@ -26,5 +26,6 @@ export default async function (_, { email, password }, context) {
     user.token = token;
     await user.save();
 
-    return "Bearer " + token;
+    // It must be in bearer format, but for this project I think it's not necessary
+    return token;
 }

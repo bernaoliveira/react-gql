@@ -15,7 +15,10 @@ export default async function (_, { email }, context) {
     await user.save();
 
     // Send email with restoreToken here
-    console.log("USER RESTORE TOKEN: ", user.restoreToken);
+    console.log(
+        "Your restore link: ",
+        "http://localhost:3000/auth/reset?token=" + user.restoreToken
+    );
 
     return true;
 }

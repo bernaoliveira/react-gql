@@ -32,5 +32,5 @@ export default async function register(_, { name, email, password }, context) {
     user.token = token;
     await user.save();
 
-    return "Bearer " + token;
+    return token;
 }
