@@ -4,11 +4,11 @@ import RootLayout from "../routes/RootLayout";
 import ErrorLayout from "../routes/ErrorLayout";
 import AuthLayout from "../routes/AuthLayout";
 
-import Home from "../routes/home";
-import Login from "../routes/auth/login";
-import Register from "../routes/auth/register";
-import Restore from "../routes/auth/restore";
-import Reset from "../routes/auth/reset";
+import Home from "../routes/home/Index";
+import Login from "../routes/auth/Login";
+import Register from "../routes/auth/Register";
+import Restore from "../routes/auth/Restore";
+import Reset from "../routes/auth/Reset";
 import ProtectedRoute from "../routes/ProtectedRoute";
 
 const router = createBrowserRouter([

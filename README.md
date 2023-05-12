@@ -1,7 +1,12 @@
-# react-gql
+# React GraphQL App
 
 ## Description
-This is a simple app that uses React, GraphQL, and Apollo that has simple authentication and authorization. It uses a simple Apollo server that is built with Node.js. The app is a simple authentication app that allows users to sign up, login, reset password and logout. The app also has a simple authorization feature that allows users to only see their own data. The app uses a simple SQLite base.
+This is a simple app that uses React, GraphQL, and Apollo that has simple authentication and authorization. It uses a simple Apollo server that is built with Node.js. Users can sign up, login, reset password, logout, add and delete notes. Users can see only their own notes. The app uses a simple SQLite base.
+
+## Screenshots
+
+![image](https://github.com/bernaoliveira/react-gql/assets/45824272/5def0350-c9f0-43e2-9319-21fcd6668ed0)
+![image](https://github.com/bernaoliveira/react-gql/assets/45824272/46599539-2543-44f7-ad60-f3ff45ac7907)
 
 ## Installation
 1. Clone the repo
