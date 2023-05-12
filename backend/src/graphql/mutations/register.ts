@@ -5,7 +5,7 @@ export default async function register(_, { name, email, password }, context) {
     if (
         await context.db.User.findOne({
             rejectOnEmpty: false,
-            where: { email },
+            where: { email: email.toLowerCase() },
         })
     ) {
         throw new GraphQLError("Email already in use");
@@ -21,7 +21,7 @@ export default async function register(_, { name, email, password }, context) {
 
     const user = await context.db.User.create({
         name,
-        email,
+        email: email.toLowerCase(),
         password: hashedPassword,
         notes: [],
     });
